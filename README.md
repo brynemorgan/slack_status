@@ -3,9 +3,10 @@ A simple script to update Slack Status based on wifi locations.
 
 1. Obtain an API token from [Slack](https://api.slack.com)
 2. Edit `slackstatus.sh` to include your API key
-3. Change the values of `$ssid` and `status_text`, and `status_emoji` in the API calls (`curl` commands) to the stuff you want. 
-4. Put `local.status.plist` in your `~/Library/LaunchAgents` folder
-5. Put `slackstatus.sh` in your `~/Library/Application Support` directory and make sure it is executable (e.g. `> chmod 775 slackstatus.sh`).
+3. Edit `local.status.plist` to point to your local `Application Support` folder (change `kellycaylor` to your user name)
+4. Change the values of `$ssid` and `status_text`, and `status_emoji` in the API calls (`curl` commands) to the stuff you want. 
+5. Put `local.status.plist` in your `~/Library/LaunchAgents` folder
+6. Put `slackstatus.sh` in your `~/Library/Application Support` directory and make sure it is executable (e.g. `> chmod 775 slackstatus.sh`).
 
   
 Notes: 
